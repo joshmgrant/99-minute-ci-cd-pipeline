@@ -23,4 +23,4 @@ Please have the following prerequisites in place:
 
 >   Select the button below to try this demo in [Gitpod](https://www.gitpod.io/)
 >
->  [![Open in Gitpod](https://github.com/joshmgrant/99-minute-ci-cd-pipeline/blob/master/open-in-gitpod.png)](https://gitpod.io/#https://joshmgrant/99-minute-ci-cd-pipeline)
+>  [![Open in Gitpod](https://github.com/joshmgrant/99-minute-ci-cd-pipeline/blob/main/open-in-gitpod.png)](https://gitpod.io/#https://github.com/joshmgrant/99-minute-ci-cd-pipeline)
