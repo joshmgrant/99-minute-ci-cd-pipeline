@@ -13,7 +13,7 @@ _Please **Do Not** fork this repo for the workshop. **DO** clone this down and m
 Please have the following prerequisites in place:
 
 - A valid GitHub account
-- A CircleCI account (connect via your GitHub account)
+- A [CircleCI account](https://circleci.com/signup/) (connect via your GitHub account)
 - Knowledge of and/or willingness to learn some JavaScript using NodeJS
 - Knowledge of and/or willingness to learn some basic [React](https://reactjs.org/tutorial/tutorial.html) for front-end development
 - Knowledge of and/or willingness to learn some basic [WebDriverIO](https://webdriver.io) for browser testing
