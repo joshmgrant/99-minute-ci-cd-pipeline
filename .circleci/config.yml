@@ -1,0 +1,15 @@
+version: 2
+jobs:  
+  build:  
+    docker:  
+      - image: circleci/node:lts
+    steps: 
+      - run: 
+          name: Stage 1
+          command: echo "install"
+      - run:
+          name: Stage 2
+          command: echo "???"
+      - run:
+          name: Stage 3
+          command: echo "profit"
