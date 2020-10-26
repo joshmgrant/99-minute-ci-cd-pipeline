@@ -16,4 +16,4 @@ jobs:
           command: npm run start &
       - run:
           name: Run Functional Tests
-          command: echo "functional tests"   
+          command: npm run test-wdio
