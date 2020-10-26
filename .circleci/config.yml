@@ -12,8 +12,8 @@ jobs:
           name: Run Unit Tests
           command: npm run test
       - run:
-          name: Deploy
-          command: npm run start &
+          name: Pre-Release
+          command: npm run predeploy
       - run:
-          name: Run Functional Tests
-          command: npm run test-wdio
+          name: Release
+          command: npm run deploy
