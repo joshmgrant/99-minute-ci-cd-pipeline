@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73d610eadd2d3b489d8b319e0681d577",
+    "revision": "5de3883c5bfe7970658b394084914b1f",
     "url": "/99-minute-ci-cd-pipeline/index.html"
   },
   {
-    "revision": "072f7fd37432cf6dae38",
+    "revision": "a298eac0f9e1d6781930",
     "url": "/99-minute-ci-cd-pipeline/static/css/main.6383cd5b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/99-minute-ci-cd-pipeline/static/js/2.655217e4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "072f7fd37432cf6dae38",
-    "url": "/99-minute-ci-cd-pipeline/static/js/main.a914bb15.chunk.js"
+    "revision": "a298eac0f9e1d6781930",
+    "url": "/99-minute-ci-cd-pipeline/static/js/main.fb5e4e54.chunk.js"
   },
   {
     "revision": "f2202345aac4587337e8",
