@@ -7,10 +7,10 @@ jobs:
       - checkout
       - run: 
           name: Build
-          command: echo "build"
+          command: npm install
       - run:
           name: Run Unit Tests
-          command: echo "unit tests"
+          command: npm run test
       - run:
           name: Deploy
           command: echo "deploy to host"
