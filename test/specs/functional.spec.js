@@ -7,13 +7,13 @@ describe('Temperature converter', () => {
         const actualTitle = $(".App-title").getText();
         const expectedTitle = "Welcome to Celcius to Farhenheit Calculator!"
 
-        assert.equal(actualTitle, expectedTitle);
+        assert.strictEqual(actualTitle, expectedTitle);
     });
 
     it('should have the logo', () => {
         browser.url('/');
 
-        assert.equal($(".App-logo").isDisplayed(), true);
+        assert.strictEqual($(".App-logo").isDisplayed(), true);
     });
 
     it('should show the correct initial conversion message', () => {
@@ -22,7 +22,7 @@ describe('Temperature converter', () => {
         const actualMessage = $('.temperatureMesssage').getText();
         const expectedMessage = "Watiting for input...";
 
-        assert.equal(actualMessage, expectedMessage);
+        assert.strictEqual(actualMessage, expectedMessage);
     });
 
     it('should show the correct conversion message after conversion', () => {
@@ -32,6 +32,6 @@ describe('Temperature converter', () => {
 
         const actualMessage = $('.temperatureMesssage').getText();
 
-        assert.equal(actualMessage.includes("0 Celsius is 32 Farhenheit"), true);
+        assert.strictEqual(actualMessage.includes("0 Celsius is 32 Fahrenheit"), true);
     });
 });

@@ -6,8 +6,6 @@ This is the accompanying GitHub repo for the Ministry of Test 99-Minute Workshop
 
 This repo contains the practice portion of the workshop. 
 
-_Please **Do Not** fork this repo for the workshop. **DO** clone this down and make changes in your repo._
-
 ## Prerequisites
 
 Please have the following prerequisites in place:
