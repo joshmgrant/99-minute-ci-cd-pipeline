@@ -13,7 +13,7 @@ jobs:
           command: npm run test
       - run: 
           name: Local Deploy
-          command: npm start & sleep 30
+          command: npm start & sleep 60
       - run: 
           name: Run Functional Tests
           command: npm run test-wdio 
