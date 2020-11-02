@@ -1,4 +1,7 @@
 version: 2
+
+orbs:
+  sauce-connect: saucelabs/sauce-connect@1.0.1
 jobs:  
   build:  
     docker:  
@@ -16,7 +19,8 @@ jobs:
           command: npm start & sleep 60
       - run: 
           name: Run Functional Tests
-          command: npm run test-wdio 
+          command: npm run test-wdio
+	  tunnel_identifer: 'circleTunnel'
       - run:
           name: Pre-Release
           command: npm run predeploy

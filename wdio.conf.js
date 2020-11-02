@@ -8,7 +8,7 @@ exports.config = {
     maxInstances: 10,
    
     capabilities: [{
-        browserName: 'chrome', browserVersion: "latest", platformName: "Windows 10"
+        browserName: 'chrome', browserVersion: "latest", platformName: "Windows 10", 'sauce:options': {'tunnelIdentifer': 'circleTunne'}
     }],
    
     sync: true,
