@@ -26,4 +26,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm start &
-    - run: npm run test-wdio
+    - name: Run WDIO Tests
+      env:
+        SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
+        SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
+      run: npm run test-wdio
