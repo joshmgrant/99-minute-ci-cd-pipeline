@@ -10,7 +10,7 @@ jobs:
           command: npm install
       - run:
           name: Run Unit Tests
-          command: npm run test
+          command: echo 127.0.0.1 devhost | sudo tee -a /etc/hosts
       - run: 
           name: Local Deploy
           command: npm start & sleep 60
