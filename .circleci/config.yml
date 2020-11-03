@@ -16,7 +16,7 @@ jobs:
           command: npm test
       - run: 
           name: Local Deploy
-          command: echo 'deploy'
+          command: npm start & sleep 30
       - run: 
           name: Run Functional Tests
           command: curl http://localhost:3000
