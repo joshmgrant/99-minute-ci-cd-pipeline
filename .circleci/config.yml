@@ -13,14 +13,13 @@ jobs:
           command: npm install
       - run:
           name: Run Unit Tests
-          command: echo 127.0.0.1 devhost | sudo tee -a /etc/hosts
+          command: npm test
       - run: 
           name: Local Deploy
-          command: npm start & sleep 60
+          command: echo 'deploy'
       - run: 
           name: Run Functional Tests
-          command: npm run test-wdio
-	  tunnel_identifer: 'circleTunnel'
+          command: curl http://localhost:3000
       - run:
           name: Pre-Release
           command: npm run predeploy
