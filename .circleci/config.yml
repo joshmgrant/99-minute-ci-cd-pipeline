@@ -19,7 +19,7 @@ jobs:
           command: npm start & sleep 30
       - run: 
           name: Run Functional Tests
-          command: curl http://localhost:3000
+          command: npm run test-wdio
       - run:
           name: Pre-Release
           command: npm run predeploy
