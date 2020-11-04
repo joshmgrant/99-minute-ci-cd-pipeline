@@ -1,28 +1,29 @@
-version: 2
+version: 2.1
 
 orbs:
-  sauce-connect: saucelabs/sauce-connect@1.0.1
+   saucelabs: saucelabs/connect@volatile
 jobs:  
   build:  
     docker:  
       - image: circleci/node:lts
-    steps: 
-      - checkout
-      - run: 
-          name: Build
-          command: npm install
-      - run:
-          name: Run Unit Tests
-          command: npm test
-      - run: 
-          name: Local Deploy
-          command: npm start & sleep 30
-      - run: 
-          name: Run Functional Tests
-          command: npm run test-wdio
-      - run:
-          name: Pre-Release
-          command: npm run predeploy
-      - run:
-          name: Release
-          command: npm run deploy
+    saucelabs/with_proxy:
+      steps: 
+        - checkout
+        - run: 
+            name: Build
+            command: npm install
+        - run:
+            name: Run Unit Tests
+            command: npm test
+        - run: 
+            name: Local Deploy
+            command: npm start & sleep 30
+        - run:
+            name: Run Functional Tests
+            command: npm run test-wdio
+        - run:
+            name: Pre-Release
+            command: npm run predeploy
+        - run:
+            name: Release
+            command: npm run deploy
