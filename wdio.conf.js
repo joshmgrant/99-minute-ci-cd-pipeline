@@ -1,3 +1,5 @@
+const serverhost = `http://${require('ip').address()}:9000`
+
 exports.config = {
     
    
@@ -24,7 +26,7 @@ exports.config = {
     
     screenshotPath: './errorShots/',
    
-    baseUrl: 'http://devhost:3000',
+    baseUrl: serverhost,
     
     waitforTimeout: 10000,
     
