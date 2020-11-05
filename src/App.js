@@ -42,7 +42,7 @@ class TemperatureMessage extends React.Component {
     if (!celsius || !fahrenheit) {
       return (
         <div className="temperatureMesssage"> 
-          <h2>Watiting for input...</h2>
+          <h2>Watiting for values...</h2>
         </div>
       );
     }
