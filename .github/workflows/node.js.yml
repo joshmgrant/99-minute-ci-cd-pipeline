@@ -31,3 +31,7 @@ jobs:
         SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
         SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
       run: npm run test-wdio
+    - name: Prepare for Release
+      run: npm run predeploy
+    - name: Release
+      run: npm run deploy
