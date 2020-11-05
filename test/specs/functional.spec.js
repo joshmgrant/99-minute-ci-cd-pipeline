@@ -20,7 +20,7 @@ describe('Temperature converter', () => {
         browser.url('/');
 
         const actualMessage = $('.temperatureMesssage').getText();
-        const expectedMessage = "Watiting for input...";
+        const expectedMessage = "Watiting for values...";
 
         assert.strictEqual(actualMessage, expectedMessage);
     });
