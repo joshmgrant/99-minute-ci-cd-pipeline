@@ -103,7 +103,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Celcius to Farhenheit Calculator!</h1>
+          <h1 className="App-title">Welcome to Celsius to Fahrenheit Calculator!</h1>
         </header>
         
         <div className="App-form">
